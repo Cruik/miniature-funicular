@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Funicular.Views.Calendar"
+             xmlns:viewModels="clr-namespace:Funicular.ViewModels;assembly=Funicular"
+             xmlns:base="clr-namespace:Funicular.Base;assembly=Funicular"
+
+             base:ViewModelLocator.AutoWireViewModel="true"
+             >
+    <ContentPage.BindingContext>
+        <viewModels:CalendarViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Hello, calendar!"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
