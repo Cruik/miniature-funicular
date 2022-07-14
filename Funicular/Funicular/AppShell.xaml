@@ -26,10 +26,13 @@
         <BackButtonBehavior TextOverride="" />
     </Shell.BackButtonBehavior>
     <FlyoutItem >
-        <ShellContent ContentTemplate="{DataTemplate views:MainPage}" Route="Login" />
+        <ShellContent ContentTemplate="{DataTemplate views:LoginView}" Route="Login" />
+        <ShellContent ContentTemplate="{DataTemplate views:MainPage}" Route="MainPage" />
+        <ShellContent ContentTemplate="{DataTemplate views:Calendar}" Route="Calendar" />
     </FlyoutItem>
 
     <TabBar Route="Main">
         <ShellContent Title="CALENDAR" Route="Calendar" Icon="{StaticResource CatalogIconImageSource}" ContentTemplate="{DataTemplate views:Calendar}" />
+        <ShellContent Title="CALENDAR" Route="Login" Icon="{StaticResource CatalogIconImageSource}" ContentTemplate="{DataTemplate views:LoginView}" />
     </TabBar>
 </Shell>

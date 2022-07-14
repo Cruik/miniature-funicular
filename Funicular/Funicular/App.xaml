@@ -2,6 +2,9 @@
 
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:converters="clr-namespace:Funicular.Converters;assembly=Funicular"
+
              x:Class="Funicular.App">
     <Application.Resources>
         <ResourceDictionary>
@@ -240,7 +243,7 @@
                 <On Platform="Android" Value="None" />
             </OnPlatform>
 
-            <!--  CONVERTERS  
+            <!--  CONVERTERS -->  
             <xct:IntToBoolConverter x:Key="CountToBoolConverter" />
             <xct:InvertedBoolConverter x:Key="InverseBoolConverter" />
             <xct:TextCaseConverter x:Key="ToUpperConverter" Type="Upper" />
@@ -250,7 +253,7 @@
             <xct:ListIsNotNullOrEmptyConverter x:Key="ListIsNotNullOrEmptyConverter" />
             <converters:ItemsToHeightConverter x:Key="ItemsToHeightConverter" />
             <x:String x:Key="DateTimeFormat">{0:MMMM dd yyyy}</x:String>
--->
+
             <!--  EXPLICIT STYLES  -->
             <Style x:Key="ValidationErrorLabelStyle" TargetType="{x:Type Label}">
                 <Setter Property="TextColor" Value="{StaticResource ErrorColor}" />

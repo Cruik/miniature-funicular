@@ -46,7 +46,7 @@ namespace Funicular.ViewModels
             {
 
             
-                await NavigationService.NavigateToAsync("Calendar");
+                await NavigationService.NavigateToAsync("Login");
             }
             catch(Exception ex)
             {

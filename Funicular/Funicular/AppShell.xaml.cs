@@ -19,13 +19,15 @@ namespace Funicular
 
             if(string.IsNullOrEmpty(settingsService.AuthAccessToken))
             {
-                this.GoToAsync("//Login");
+                this.GoToAsync("//MainPage");
             }
         }
 
         private void InitializeRouting()
         {
             Routing.RegisterRoute("Calendar", typeof(Calendar));
+            Routing.RegisterRoute("MainPage", typeof(MainPage));
+            Routing.RegisterRoute("Login", typeof(LoginView));
         }
     }
 }
